@@ -6,30 +6,33 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3D0FA9362D5702800004F5C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FA9292D5702800004F5C1 /* AppDelegate.swift */; };
+		3D0FA9372D5702800004F5C1 /* CircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FA92B2D5702800004F5C1 /* CircularProgress.swift */; };
+		3D0FA9382D5702800004F5C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FA9312D5702800004F5C1 /* SceneDelegate.swift */; };
+		3D0FA9392D5702800004F5C1 /* TimerBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FA9322D5702800004F5C1 /* TimerBrain.swift */; };
+		3D0FA93A2D5702800004F5C1 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FA9332D5702800004F5C1 /* TimerViewController.swift */; };
+		3D0FA93B2D5702800004F5C1 /* VisualConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FA9342D5702800004F5C1 /* VisualConstant.swift */; };
+		3D0FA93C2D5702800004F5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0FA92A2D5702800004F5C1 /* Assets.xcassets */; };
+		3D0FA93E2D5702800004F5C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0FA92E2D5702800004F5C1 /* LaunchScreen.storyboard */; };
+		3D0FA93F2D5702800004F5C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0FA9302D5702800004F5C1 /* Main.storyboard */; };
+		3DD669DE2D5B0B7A0042D4BF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD669DD2D5B0B7A0042D4BF /* ResultViewController.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3D0FA9042D56EA3C0004F5C1 /* CoolDownCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolDownCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D0FA9292D5702800004F5C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D0FA92A2D5702800004F5C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D0FA92B2D5702800004F5C1 /* CircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
+		3D0FA92C2D5702800004F5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D0FA92D2D5702800004F5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D0FA92F2D5702800004F5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D0FA9312D5702800004F5C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D0FA9322D5702800004F5C1 /* TimerBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerBrain.swift; sourceTree = "<group>"; };
+		3D0FA9332D5702800004F5C1 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
+		3D0FA9342D5702800004F5C1 /* VisualConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualConstant.swift; sourceTree = "<group>"; };
+		3DD669DD2D5B0B7A0042D4BF /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		3D0FA9162D56EA3D0004F5C1 /* Exceptions for "CoolDownCoach" folder in "CoolDownCoach" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				Info.plist,
-			);
-			target = 3D0FA9032D56EA3C0004F5C1 /* CoolDownCoach */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		3D0FA9062D56EA3C0004F5C1 /* CoolDownCoach */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				3D0FA9162D56EA3D0004F5C1 /* Exceptions for "CoolDownCoach" folder in "CoolDownCoach" target */,
-			);
-			path = CoolDownCoach;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3D0FA9012D56EA3C0004F5C1 /* Frameworks */ = {
@@ -45,7 +48,7 @@
 		3D0FA8FB2D56EA3C0004F5C1 = {
 			isa = PBXGroup;
 			children = (
-				3D0FA9062D56EA3C0004F5C1 /* CoolDownCoach */,
+				3D0FA9352D5702800004F5C1 /* CoolDownCoach */,
 				3D0FA9052D56EA3C0004F5C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,6 +59,48 @@
 				3D0FA9042D56EA3C0004F5C1 /* CoolDownCoach.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		3D0FA9352D5702800004F5C1 /* CoolDownCoach */ = {
+			isa = PBXGroup;
+			children = (
+				3D0FA9292D5702800004F5C1 /* AppDelegate.swift */,
+				3D0FA9312D5702800004F5C1 /* SceneDelegate.swift */,
+				3D0FA9342D5702800004F5C1 /* VisualConstant.swift */,
+				3D0FA9402D5703C30004F5C1 /* Model */,
+				3D0FA9412D5703CC0004F5C1 /* View */,
+				3D0FA9422D5703DF0004F5C1 /* Controller */,
+				3D0FA92A2D5702800004F5C1 /* Assets.xcassets */,
+				3D0FA92C2D5702800004F5C1 /* Info.plist */,
+			);
+			path = CoolDownCoach;
+			sourceTree = "<group>";
+		};
+		3D0FA9402D5703C30004F5C1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D0FA92B2D5702800004F5C1 /* CircularProgress.swift */,
+				3D0FA9322D5702800004F5C1 /* TimerBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D0FA9412D5703CC0004F5C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D0FA9302D5702800004F5C1 /* Main.storyboard */,
+				3D0FA92E2D5702800004F5C1 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D0FA9422D5703DF0004F5C1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3D0FA9332D5702800004F5C1 /* TimerViewController.swift */,
+				3DD669DD2D5B0B7A0042D4BF /* ResultViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,9 +117,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				3D0FA9062D56EA3C0004F5C1 /* CoolDownCoach */,
 			);
 			name = CoolDownCoach;
 			packageProductDependencies = (
@@ -122,6 +164,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0FA93C2D5702800004F5C1 /* Assets.xcassets in Resources */,
+				3D0FA93E2D5702800004F5C1 /* LaunchScreen.storyboard in Resources */,
+				3D0FA93F2D5702800004F5C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +177,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0FA9362D5702800004F5C1 /* AppDelegate.swift in Sources */,
+				3D0FA9372D5702800004F5C1 /* CircularProgress.swift in Sources */,
+				3DD669DE2D5B0B7A0042D4BF /* ResultViewController.swift in Sources */,
+				3D0FA9382D5702800004F5C1 /* SceneDelegate.swift in Sources */,
+				3D0FA9392D5702800004F5C1 /* TimerBrain.swift in Sources */,
+				3D0FA93A2D5702800004F5C1 /* TimerViewController.swift in Sources */,
+				3D0FA93B2D5702800004F5C1 /* VisualConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3D0FA92E2D5702800004F5C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D0FA92D2D5702800004F5C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3D0FA9302D5702800004F5C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D0FA92F2D5702800004F5C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3D0FA9182D56EA3D0004F5C1 /* Debug */ = {
@@ -148,11 +219,13 @@
 				DEVELOPMENT_TEAM = F62W99T2PT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoolDownCoach/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -176,11 +249,13 @@
 				DEVELOPMENT_TEAM = F62W99T2PT;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CoolDownCoach/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
