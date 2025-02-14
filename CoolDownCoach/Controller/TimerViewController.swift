@@ -45,9 +45,9 @@ class TimerViewController: UIViewController {
     var wasteEndTime = Date()
     
     var targetRecoveryTime = 0
-    var wastedTime = 0
     var globalInterval = 0
     
+    var tempWastedTime = 0
     var totalWastedTime = 0
     var totalWorkoutTime = 0
     var totalBreakTime = 0
@@ -167,6 +167,15 @@ class TimerViewController: UIViewController {
         isStart = false
         buttonDisable()
         
+        if Int(workoutEndTime.timeIntervalSince(workoutStartTime)) <= 0 {
+            totalWorkoutTime = 0
+        } else {
+            totalWorkoutTime = Int(workoutEndTime.timeIntervalSince(workoutStartTime))
+        }
+        
+        
+        print("totalWorkoutTime: \(totalWorkoutTime)"
+        )
         self.performSegue(withIdentifier: "goToResult", sender: self)
     }
     
@@ -174,8 +183,6 @@ class TimerViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToResult" {
             let destinationVC = segue.destination as! ResultViewController
-            
-            totalWorkoutTime = Int(workoutEndTime.timeIntervalSince(workoutStartTime))
             
             destinationVC.resultWorkoutTime = timerBrain.getTimeString(seconds: totalWorkoutTime)
             destinationVC.resultBreakTime = timerBrain.getTimeString(seconds: totalBreakTime)
@@ -240,13 +247,12 @@ extension TimerViewController {
     @objc func updateWastedTimer() {
 //        wastedTime += 1
         wasteEndTime = Date()
-        print("낭비중인 시간: \(wastedTime)")
         let interval = Int(wasteEndTime.timeIntervalSince(wasteStartTime))
         if interval > 4 {
-            totalWastedTime += 1
+            tempWastedTime = interval - 4
             wastedTimeTitle.textColor = ColorPallete.basicUIYellow
             wastedTimeLabel.textColor = ColorPallete.basicUIYellow
-            wastedTimeLabel.text = timerBrain.getTimeString(seconds: totalWastedTime)
+            wastedTimeLabel.text = timerBrain.getTimeString(seconds: tempWastedTime)
             print("Total Wasted Time: \(interval)")
         }
     }
@@ -340,6 +346,10 @@ extension TimerViewController {
         
 //        view.backgroundColor = .white
         breakTimeLabel.text = timerBrain.getTimeString(seconds: totalBreakTime + targetRecoveryTime)
+        
+        totalWastedTime += tempWastedTime
+        wastedTimeLabel.text = timerBrain.getTimeString(seconds: totalWastedTime)
+
         setsLabel.text = String(totalSetsCount)
         startRecoveryButton.setTitle("Recovery", for: .normal)
     }
@@ -355,7 +365,7 @@ extension TimerViewController {
         buttonDisable()
       
         targetRecoveryTime = 0
-        wastedTime = 0
+        tempWastedTime = 0
         
         totalWastedTime = 0
         totalWorkoutTime = 0

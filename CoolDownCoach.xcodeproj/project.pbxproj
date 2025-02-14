@@ -13,16 +13,15 @@
 		3D0FA9392D5702800004F5C1 /* TimerBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FA9322D5702800004F5C1 /* TimerBrain.swift */; };
 		3D0FA93A2D5702800004F5C1 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FA9332D5702800004F5C1 /* TimerViewController.swift */; };
 		3D0FA93B2D5702800004F5C1 /* VisualConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0FA9342D5702800004F5C1 /* VisualConstant.swift */; };
-		3D0FA93C2D5702800004F5C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0FA92A2D5702800004F5C1 /* Assets.xcassets */; };
 		3D0FA93E2D5702800004F5C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0FA92E2D5702800004F5C1 /* LaunchScreen.storyboard */; };
 		3D0FA93F2D5702800004F5C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0FA9302D5702800004F5C1 /* Main.storyboard */; };
+		3D4829DF2D5EBDF100A869DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D4829DE2D5EBDF100A869DA /* Assets.xcassets */; };
 		3DD669DE2D5B0B7A0042D4BF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD669DD2D5B0B7A0042D4BF /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D0FA9042D56EA3C0004F5C1 /* CoolDownCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolDownCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0FA9292D5702800004F5C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3D0FA92A2D5702800004F5C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D0FA92B2D5702800004F5C1 /* CircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
 		3D0FA92C2D5702800004F5C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D0FA92D2D5702800004F5C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +30,7 @@
 		3D0FA9322D5702800004F5C1 /* TimerBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerBrain.swift; sourceTree = "<group>"; };
 		3D0FA9332D5702800004F5C1 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 		3D0FA9342D5702800004F5C1 /* VisualConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualConstant.swift; sourceTree = "<group>"; };
+		3D4829DE2D5EBDF100A869DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DD669DD2D5B0B7A0042D4BF /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,8 +70,8 @@
 				3D0FA9402D5703C30004F5C1 /* Model */,
 				3D0FA9412D5703CC0004F5C1 /* View */,
 				3D0FA9422D5703DF0004F5C1 /* Controller */,
-				3D0FA92A2D5702800004F5C1 /* Assets.xcassets */,
 				3D0FA92C2D5702800004F5C1 /* Info.plist */,
+				3D4829DE2D5EBDF100A869DA /* Assets.xcassets */,
 			);
 			path = CoolDownCoach;
 			sourceTree = "<group>";
@@ -164,8 +164,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D0FA93C2D5702800004F5C1 /* Assets.xcassets in Resources */,
 				3D0FA93E2D5702800004F5C1 /* LaunchScreen.storyboard in Resources */,
+				3D4829DF2D5EBDF100A869DA /* Assets.xcassets in Resources */,
 				3D0FA93F2D5702800004F5C1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

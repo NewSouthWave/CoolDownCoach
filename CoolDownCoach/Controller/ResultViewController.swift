@@ -38,6 +38,11 @@ class ResultViewController: UIViewController {
         resultWastedTimeLabel.text = resultWastedTime
         resultSetsLabel.text = resultSets
         
+//        print(workoutTimeView.isHidden)
+//        print(breakTimeView.isHidden)
+//        print(wastedTimeView.isHidden)
+//        print(setsView.isHidden)
+        
         // Do any additional setup after loading the view.
     }
     
@@ -56,6 +61,12 @@ class ResultViewController: UIViewController {
         wastedTimeView.layer.cornerRadius = 25
         setsView.layer.cornerRadius = 25
         backButton.layer.cornerRadius = 25
+        
+        workoutTimeView.clipsToBounds = false
+        breakTimeView.clipsToBounds = false
+        setsView.clipsToBounds = false
+        wastedTimeView.clipsToBounds = false
+
     }
     
 }
