@@ -8,7 +8,8 @@
 import UIKit
 
 struct TimerBrain {
-    
+    // MARK: - 초를 시:분:초 형식의 String으로 반환
+
     func getTimeString (seconds: Int) -> String {
         let sec = seconds % 60
         let mins = (seconds % 3600) / 60

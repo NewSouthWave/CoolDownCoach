@@ -8,7 +8,7 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    
     @IBOutlet weak var workoutTimeView: UIView!
     @IBOutlet weak var breakTimeView: UIView!
     @IBOutlet weak var wastedTimeView: UIView!
@@ -49,7 +49,8 @@ class ResultViewController: UIViewController {
     @IBAction func dismissButtonPressed(_ sender: UIButton) {
         self.dismiss(animated: true)
     }
-    
+    // MARK: - UI 추가설정
+
     func setUI() {
         workoutTimeView.backgroundColor = ColorPallete.basicUIDark
         breakTimeView.backgroundColor = ColorPallete.basicUIDark
