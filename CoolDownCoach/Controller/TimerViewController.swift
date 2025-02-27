@@ -109,6 +109,7 @@ class TimerViewController: UIViewController {
             totalBreakTime += targetRecoveryTime
             totalSetsCount += 1
             setTimer()      // 회복시간 타이머 시작
+            setWastedTimer() //  낭비시간 타이머 시작 *회복시간과 동시에 시작하는 방식으로 변경 (25.02.27)
             buttonDisable()
             startRecoveryButton.setTitle("STOP", for: .normal)
             changeToStop = true     // 종료 버튼으로 전환
@@ -239,8 +240,6 @@ extension TimerViewController {
             recoveryTimeLabel.text = timerBrain.getTimeString(seconds: 0)
 
             timer.invalidate()
-            setWastedTimer()
-            wasteStartTime = Date()
             startRecoveryButton.isEnabled = true
             
         }
@@ -248,13 +247,13 @@ extension TimerViewController {
     // MARK: - 낭비시간 타이머
 
     func setWastedTimer() {
-//        wasteStartTime = Date()
+        wasteStartTime = Date()
         wastedTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateWastedTimer), userInfo: nil, repeats: true)
     }
     
     @objc func updateWastedTimer() {
         wasteEndTime = Date()
-        let interval = Int(wasteEndTime.timeIntervalSince(wasteStartTime))
+        let interval = Int(wasteEndTime.timeIntervalSince(wasteStartTime)) - targetRecoveryTime //  회복시간 시작부터 경과한 시간 만큼의 차에서 목표회복시간을 빼는 방식으로 변경 (25.02.27)
         if interval > 4 {   // 정규 회복타이머 종료 후 4초 후에 낭비시간 카운트
             tempWastedTime = interval - 4
             wastedTimeTitle.textColor = ColorPallete.basicUIYellow
